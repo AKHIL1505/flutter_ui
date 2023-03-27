@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'Images_and_details.dart';
 
-
 void main() {
   runApp(MaterialApp(
     home: CitesAroundWorld(),
-    debugShowCheckedModeBanner: false,theme: ThemeData(primarySwatch: Colors.deepOrange),
+    debugShowCheckedModeBanner: false,
+    theme: ThemeData(primarySwatch: Colors.deepOrange),
   ));
 }
 
@@ -33,17 +33,18 @@ class CitesAroundWorld extends StatelessWidget {
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: Card(color: Colors.orange,
+                child: Card(
+                  color: Colors.orange,
                   child: Row(children: [
                     Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 10),
-                          child: Image(
-                              fit: BoxFit.fill,
-                              height: 130,
-                              width: 200,
-                              image: AssetImage(image[index])),
-                        )),
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Image(
+                          fit: BoxFit.fill,
+                          height: 130,
+                          width: 200,
+                          image: AssetImage(image[index])),
+                    )),
                     Padding(
                       padding: const EdgeInsets.only(left: 25),
                       child: Wrap(direction: Axis.vertical, children: [
@@ -54,7 +55,9 @@ class CitesAroundWorld extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 16),
-                          child: Text(country[index],style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500)),
+                          child: Text(country[index],
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.w500)),
                         ),
                         Text(population[index]),
                       ]),
