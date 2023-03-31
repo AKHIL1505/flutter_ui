@@ -30,20 +30,9 @@ class ProfilUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.arrow_circle_left_outlined,
-              color: Colors.black,
-            )),
+        title: IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_circle_left_outlined, color: Colors.black,)),
         backgroundColor: Colors.white10,
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.dehaze,
-                color: Colors.black,
-              ))
+        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.dehaze, color: Colors.black,))
         ],
       ),
       body: Column(
